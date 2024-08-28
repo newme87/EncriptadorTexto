@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">
+            ENCRIPTADOR DE TEXTO
+        </h1> 
+        <img src="Logo-1.png" alt="Logo de alura" class="logoalura">
+    </header>
+    <main>
+        <section class="seccion1">
+            <div class="contenedor_cajatexto">
+                <textarea placeholder="Ingrese Texto Aqui" class="cajatexto" id="ingrese texto">
+                </textarea>
+                 
+            </div>
+            <div class="Alerta">
+                <img src="bi_exclamation-circle-fill.png" alt="Alerta">
+                <p>Solo letras minusculas y sin acentos.</p>
+            </div>
+            <div class="contenedor_botones">
+                <input type="button" class="btn_encriptar" value="Encriptar" id="btn_encriptar">
+                <input type="button" class="btn_desencriptar" value="Desencriptar" id="btn_desencriptar">
+            </div>
+        </section>
+        <section class="seccion2">
+            <div class="contenedor_muneco">
+                <img src="Muñeco.png" alt="muneco">
+            </div>
+            <div class="contenedor_parrafo">
+                <h3>ningun mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+
+            </div>
+            <div class="contenedor_copiar">
+                <input type="button" class="btn_copiar" value="Copiar" onclick="copiarAlPortapapeles('texto_resultado')">
+            </div>      
+            <div class="contenedor_resultado">
+                <p class="texto_resultado" id="texto_resultado" ></p>
+
+            </div>
+        </section>  
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
